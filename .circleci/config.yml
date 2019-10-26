@@ -45,7 +45,10 @@ jobs:
       # https://pytest.org
       # https://nose.readthedocs.io
       - run:
-          name: run integration
+          name: activate virtual env
           command: |
             . venv/bin/activate
+      - run:
+          name: run tests
+          command: |
             python call_pytest.py
