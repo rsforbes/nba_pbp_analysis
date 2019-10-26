@@ -1,0 +1,8 @@
+version: 2.1
+  jobs:
+    build:
+      docker: 
+        - image: circleci/python:3.8.0 # the primary container, where your job's commands are run
+      steps:
+        - checkout # check out the code in the project directory
+        - run: echo "py call_pytest.py" # run the `echo` command
