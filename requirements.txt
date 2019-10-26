@@ -1,2 +1,4 @@
 nose
 sphinx
+pytest
+nba_api
